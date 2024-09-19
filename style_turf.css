@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu',sans-serif ;
+}
+body{
+    overflow: hidden;
+}
+section{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background:#f7fcca;
+}
+section .blur_clr{
+    position :absolute;
+    filter:blur(150px);
+}
+section .blur_clr:nth-child(1)
+{
+    background: #fffd87;
+    width: 500px;
+    height: 300px;
+    margin-right:-1350px;
+    margin-top:-450px;
+}
+section .blur_clr:nth-child(2)
+{
+    background: #fffd87;
+    width: 300px;
+    height: 300px;
+    margin-left:-400px;
+    margin-bottom:-450px;
+}
+header{
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding :30px 100px ;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position:relative;
+    font-size: 2.5em;
+    color:#8a2435;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+header .nav{
+    position:relative;
+    display: flex;
+}
+
+header .nav li{
+    list-style: none;
+    margin :0 10px;
+}
+header .nav li a{
+    color: #8a2435;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition:0.5s;
+} 
+header .nav li a:hover{
+    background: #ffff;
+    box-shadow: 0 5px 10px rgba(10,0,0,0.1);
+}
+header .btn{
+        background: #8a2435;
+        color:#ffff;
+        padding: 8px 15px;
+        border-radius: 25px;
+        font-weight: 500;
+        text-decoration: none;
+        transition:0.5s;
+}
+header .btn:hover{
+    transform: scale(0.9);
+}
+.content{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.content .contentbx{
+    max-width: 500px;
+}
+.content .contentbx h1{
+    font-size: 1.5em;
+    color:#000;
+    line-height: 1em;
+    margin:10px;
+}
+
+.content .contentbx p{
+    font-size: 1em;
+    color:#000;
+    margin:30px 10px;
+}
+.content .contentbx .btn{
+    background: #8a2435;
+    color:#fff;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-weight: 500;
+    margin: 20px 10px;
+    text-decoration: none;
+    transition:0.5s;
+}
+.content .contentbx .btn:hover{
+    background: #fff;
+    color: #8a2435;
+    box-shadow: 0 5px 10px rgba(10,0,0,0.1);
+}
+.infobox{
+    position: absolute;
+    display:flex;
+    left: 100px;
+    bottom:100px;
+}
+.infobox .box{
+    margin:20px 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.infobox .box i{
+    font-size: 1.6em;
+    color:#8a2435;
+    margin:10px;
+}
+.infobox .box p{
+    font-size: 15px;
+}
